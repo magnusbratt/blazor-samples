@@ -24,11 +24,11 @@ public class Contact
     [StringLength(50, ErrorMessage = "City cannot exceed 50 characters.")]
     public string? City { get; set; }
 
-    [Required]
+   //  [Required]
     [StringLength(3, ErrorMessage = "State abbreviation cannot exceed 3 characters.")]
     public string? State { get; set; }
 
-    [Required]
+    // [Required]
     [RegularExpression(@"^\d{5}(?:[-\s]\d{4})?$", ErrorMessage = "Enter a valid zipcode in 55555 or 55555-5555 format")]
     public string? ZipCode { get; set; }
 }
